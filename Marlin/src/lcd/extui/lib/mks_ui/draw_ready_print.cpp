@@ -382,7 +382,7 @@ void lv_draw_ready_print(uint8_t state)
 			lv_obj_align(labelExtrusion, buttonExtrusion, LV_ALIGN_IN_BOTTOM_MID, 0, BUTTON_TEXT_Y_OFFSET);
 
 			#if ENABLED(AUTO_BED_LEVELING_BILINEAR)
-			lv_label_set_text(label_Level, tool_menu.autoleveling);
+			lv_label_set_text(label_Level, "Bed Lvl");
 			#else
 			lv_label_set_text(label_Level, main_menu.leveling);
 			#endif
